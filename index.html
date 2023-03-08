@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum vitae</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="icon" type="image/x-icon" href="imagenes/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Roboto:ital@1&family=Shantell+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <a href="#" class="logo">CV</a>
+            <button class="barr"><i class="fa-solid fa-bars"></i></button>
+            <ul class="barmenu">
+                <li><a href="#inicio" class="menulink">Inicio</a></li>
+                <li><a href="#Proyectos" class="menulink">Proyectos</a></li>
+                <li><a href="#Contacto" class="menulink">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio">
+    <div class="intro">
+        <div class="presentacion"> 
+            <div class="img">
+                <img src="barney.jpg" alt="postulante">
+            </div>
+            <div class="nombre">
+                <h1>Barney Stinson</h1>
+                <h2>Ingeniero en Sistemas</h2>
+            </div>
+         </div>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga magnam natus, commodi a omnis vel, doloremque neque iusto nostrum quisquam aliquam, explicabo sit unde autem non ex. Maiores, aliquid aperiam.</p>
+    </div>
+    </section>
+    <section id="Proyectos">
+        <h2>Proyectos realizados</h2>
+			<div class="trabajos">
+
+				<div class="proyecto-contenido">
+					<img src="imagenes/proyecto1.jpg" alt="trabajo">
+					<h3>Primer proyecto</h3>
+					<p>Lorem ipsum dolor sit amet. Ut blanditiis illum hic maiores libero et minima perferendis qui nulla ipsam ex omnis distinctio. Ut totam voluptatem sit error velit id omnis galisum id dolores voluptate ut libero dolores sit nesciunt saepe. Id voluptatem molestiae At harum magnam vel ratione aperiam.</p>
+					<a href="www.google.com">Ver proyecto</a>
+					
+				</div>
+
+				<div class="proyecto-contenido">
+					<img src="imagenes/proyecto 2.jpg" alt="trabajo">
+					<h3>Segundo proyecto</h3>
+					<p>Vel fugiat corporis ut eveniet unde et quia suscipit. Et dignissimos facilis aut omnis Quis et debitis accusantium. Eum corrupti Quis et distinctio quia ut animi ratione aut possimus illum. Et modi veniam sed sunt sint quo quae tenetur vel sequi unde.</p>
+					<a href="www.google.com">Ver proyecto</a>
+					
+				</div>
+
+				<div class="proyecto-contenido">
+					<img src="imagenes/proyecto3.jpg" alt="trabajo">
+					<h3>Tercer proyecto</h3>
+					<p>Ad omnis dolore sit enim eligendi qui saepe eaque. Qui perspiciatis sequi est nisi laudantium aut odio obcaecati vel rerum aperiam non nesciunt ducimus eum magnam quidem.</p>
+					<a href="www.google.com">Ver proyecto</a>
+					
+				</div>
+
+				<div class="proyecto-contenido">
+					<img src="imagenes/proyecto4.jpg" alt="trabajo">
+					<h3>Cuarto proyecto</h3>
+					<p>Eum Quis modi in aliquid repellendus sed quia ducimus ut consequatur maxime non pariatur voluptatum non numquam iusto. Vel quia impedit ex provident voluptate et distinctio sint quo inventore voluptate.</p>
+					<a href="www.google.com">Ver proyecto</a>
+					
+				</div>
+				
+			</div>
+    </section>
+    <section id="Contacto">
+        <div class="form-contenedor">
+   
+           <form action="" method="" id="formulario" class="formulario">
+               <h2>Deja tu informacion de contacto</h2>
+               <label for="nombre" class="formulario__label">Nombre</label>
+               <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre">
+               <label for="empresa" class="formulario__label">Empresa/Institucion</label>
+               <input type="text" name="empresa" id="empresa" placeholder="Ingresa la empresa">
+               <label for="correo">Correo</label>
+               <input type="email" name="correo" id="correo" placeholder="Coloca un mail">
+               <label for="telefono">Telefono</label>
+               <input type="number" name="telefono" id="telefono" placeholder="Ingresa tu telefono">
+               <label for="mensaje">Comentarios</label>
+               <textarea name="mensaje"></textarea>
+   
+                <input type="submit" id="envi" name="submit" value="Enviar">
+           </form>
+       </div>
+   
+           <p class="gracias" id="gracias">Gracias!!, pronto nos pondremos en contacto contigo.</p>
+           <p class="error_form" id="error_form">Debes completar los campos faltantes.</p>
+        <footer>
+            <div class="derechos">
+                <p class="bases"> Bases y condiciones: ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </footer>
+    </section>
+    <script src="form.js"></script>
+</body>
+</html>

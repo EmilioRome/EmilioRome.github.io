@@ -1,0 +1,268 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Shantell Sans', cursive;
+}
+html {
+    scroll-behavior: smooth;
+}
+header {
+    background-color: black;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 5px 20px;
+    align-items: center;
+    display: flex;
+    z-index: 99;
+}
+.menu {
+    
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.menulink, .logo {
+    text-decoration: none;
+    color: orange;
+    
+}
+ul a{
+    border: 1px solid orange;
+    padding: 5px 10px;
+}
+nav a:hover{
+    color:red;
+    border-color: red;
+    transition: .5s;
+    
+}
+.logo {
+    font-size: 40px;
+    margin: 0 30px;
+}
+
+.barmenu{
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+    margin: auto;
+}
+li{
+    font-size: 20px;
+    margin: 0 50px;
+}
+.barr{
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    padding: 0 20px;
+    display: none;
+}
+
+@media (max-width: 768px){
+    
+    ul a{
+        border: none;
+    }
+    
+    .barmenu{
+        flex-direction: column;
+        margin: auto;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: rgb(31, 41, 100);
+        left:100%;
+    }
+    li{
+        font-size: 20px;
+        margin: 10px 50px;
+        text-align: center;
+    }
+    .barr{
+        display: block;
+        cursor: pointer;
+    }
+    .barmenu_visible{
+        left:0;
+    }
+}
+
+section {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 80px;
+
+}
+#inicio {
+    background-color: gray;
+}
+.intro {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 90vh;
+    }
+.intro p {
+    text-align: center;
+    max-width: 80%;
+}
+.presentacion {
+    border: 3px solid black;
+    padding: 40px 20px;
+}
+.img img {
+	border: 10px solid black;
+	width: 100%;
+	height: 300px;
+	margin-bottom: 20px;
+}
+h1 {
+	text-transform: uppercase;
+	font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+h2 {
+	font-size: 1.5rem;
+    text-align: center;
+
+}
+.redes a {
+	color: orange;
+	border-radius: 100%;
+	border: 2px solid orange;
+	padding: 5px 10px;
+	margin: 25px 20px;
+	display: inline-block;
+}
+#Proyectos h2 {
+  margin-top: 40px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 3rem;
+}
+
+.trabajos {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 30px;
+}
+
+.proyecto-contenido {
+	border: 5px solid orange;
+	width: 400px;
+	margin: 10px;
+	min-height: 450px;
+}
+.proyecto-contenido img {
+	width: 100%;
+    min-height: 300px;
+}
+.proyecto-contenido p{
+	margin: 10px 1px;
+    font-family: 'Caveat', cursive;
+    font-size: 1.3rem;
+}
+.proyecto-contenido a{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#Contacto {
+	background-image: url(imagenes/correo.webp);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+    position: relative;
+}
+
+.form-contenedor{
+    width: 100%;
+    min-height: 100hv;
+}
+.formulario{
+	width: 500px;
+	max-width: 100%;
+	margin: auto;
+	margin-top: 50px;
+	padding: 20px;
+	box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
+	position: relative;
+	background: rgba(0, 0, 0, 0.5);
+}
+.formulario h2 {
+	text-align: center;
+    color: orange;
+}
+label, input {
+	display: block;
+	width: 100%;
+	font-size: 1.3em;
+}
+label{
+	color: white;
+}
+textarea{
+	max-width: 100%;
+    width: 100%;
+    
+}
+#envi{
+	margin-top: 20px;
+}
+.gracias{
+	margin: 40px auto 0;
+	color: red;
+	font-size: 2em;
+	background: #5366F2;
+	text-align: center;
+	display: none;
+    z-index: 98;
+    position: absolute;
+    width: 100%;
+}
+.error_form{
+	margin: 40px auto 0;
+	color: rgb(10, 10, 10);
+	font-size: 2em;
+	background: #eb1d1dbe;
+	text-align: center;
+	display: none;
+    z-index: 98;
+    position: absolute;
+    width: 100%;
+}
+.derechos{
+	background: black;
+	color: white;
+	font-size: 1em;
+	padding: 7px;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+}
+footer p {
+    font-family: 'Roboto', sans-serif;
+}
+
+.formulario__grupo-correcto {
+	border: 3px solid #00a329;
+}
+
+
+.formulario__grupo-incorrecto {
+	border: 3px solid #bb2929;
+}
